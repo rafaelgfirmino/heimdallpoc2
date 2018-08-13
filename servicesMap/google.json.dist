@@ -1,0 +1,15 @@
+{
+    "services":[{
+            "name":"Google",
+            "url":"http://goole.com",
+            "handlers":[
+                {
+                    "listen":"/api/google",
+                    "ContentType":"application/json",
+                    "authorization":false,
+                    "servicePath":"/"
+                }                    
+            ]
+        }
+    ]
+}

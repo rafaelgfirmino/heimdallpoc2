@@ -1,0 +1,27 @@
+{
+  "services":[{
+    "name":"Google",
+    "url":"https://reqres.in/api/login",
+    "handlers":[
+      {
+        "listen":"/waller",
+        "ContentType":"application/json",
+        "authorization":true,
+        "servicePath":""
+      }
+    ]
+  },
+    {
+      "name":"Google",
+      "url":"http://localhost:8000/api/v1/security",
+      "handlers":[
+        {
+          "listen":"/signin",
+          "ContentType":"application/json",
+          "authorization":true,
+          "servicePath":"/signin"
+        }
+      ]
+    }
+  ]
+}

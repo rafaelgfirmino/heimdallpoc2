@@ -1,0 +1,3 @@
+[server]
+name = "Heimdall"
+port = "8000"
