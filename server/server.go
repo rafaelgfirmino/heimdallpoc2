@@ -3,17 +3,17 @@ package server
 import (
 	"context"
 	"fmt"
-		"github.com/rafaelgfirmino/heimdall/configuration"
+	"github.com/rafaelgfirmino/heimdall/configuration"
 	"github.com/rafaelgfirmino/heimdall/gateway"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
-	"strings"
-	"time"
 	"path/filepath"
 	"plugin"
+	"strings"
+	"time"
 )
 
 func StartHeimdall() {
@@ -97,7 +97,7 @@ func receiver() func(http.Handler) http.Handler {
 				panic(err)
 			}
 
-			for _, filename := range (all_plugins) {
+			for _, filename := range all_plugins {
 				p, err := plugin.Open(filename)
 				if err != nil {
 					panic(err)

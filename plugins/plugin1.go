@@ -1,10 +1,10 @@
 package main
 
 import (
-	"net/http"
 	"fmt"
+	"net/http"
 )
 
-func Plugin(r http.Request)  {
+func Plugin(r http.Request) {
 	fmt.Println(r.UserAgent())
 }
